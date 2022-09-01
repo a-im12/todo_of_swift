@@ -15,12 +15,6 @@ struct TaskData{
 
 struct ContentView: View {
     
-    init(){
-        let appearance = UINavigationBarAppearance()
-        
-        appearance.backgroundColor = UIColor.clear
-    }
-    
     @State var appendTask:Bool = false
     @State var taskList:Array<TaskData> = []
     @State var task:String = ""
@@ -96,7 +90,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
             ContentView()
         }
             
